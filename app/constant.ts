@@ -1,4 +1,4 @@
-export const OWNER = "Weathery";
+export const OWNER = "weathery";
 export const REPO = "ChatGPT";
 export const REPO_URL = `https://github.com/${OWNER}/${REPO}`;
 export const ISSUE_URL = `https://github.com/${OWNER}/${REPO}/issues`;
