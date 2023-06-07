@@ -368,7 +368,7 @@ export function Settings() {
             {checkingUpdate ? (
               <LoadingIcon />
             ) : hasNewVersion ? (
-              <DIV>&nbsp;</DIV>              
+              <div>&nbsp;</div>    
             ) : (
               <IconButton
                 icon={<ResetIcon></ResetIcon>}
