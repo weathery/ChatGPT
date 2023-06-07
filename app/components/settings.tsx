@@ -368,9 +368,7 @@ export function Settings() {
             {checkingUpdate ? (
               <LoadingIcon />
             ) : hasNewVersion ? (
-              <Link href="{REPO_URL}#keep-updated" target="_blank" className="link">
-                {Locale.Settings.Update.GoToUpdate}
-              </Link>
+              <div>&nbsp;</div>    
             ) : (
               <IconButton
                 icon={<ResetIcon></ResetIcon>}
