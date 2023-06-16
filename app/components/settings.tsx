@@ -291,7 +291,7 @@ export function Settings() {
 
   return (
     <ErrorBoundary>
-      <div className="window-header">
+      <div className="window-header" data-tauri-drag-region>
         <div className="window-header-title">
           <div className="window-header-main-title">
             {Locale.Settings.Title}
@@ -372,7 +372,7 @@ export function Settings() {
             {checkingUpdate ? (
               <LoadingIcon />
             ) : hasNewVersion ? (
-              <div>&nbsp;</div>    
+              <div>&nbsp;</div>
             ) : (
               <IconButton
                 icon={<ResetIcon></ResetIcon>}
