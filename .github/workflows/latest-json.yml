@@ -16,7 +16,7 @@ jobs:
       - name: Generate latest.json
         run: |
           # 生成latest.json的逻辑代码
-          echo '{"version": "1.0.0"}' > latest.json
+          echo '{"version": "2.0.0"}' > latest.json
 
       - name: Upload latest.json to release
         uses: actions/upload-release-asset@v1
