@@ -1,4 +1,4 @@
-name: Generate latest.json
+name: Generate Latest Release Metadata JSON file
 
 on:
   release:
