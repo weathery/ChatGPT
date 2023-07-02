@@ -25,3 +25,8 @@ tauri-plugin-window-state = { git = "https://github.com/tauri-apps/plugins-works
 # If you use cargo directly instead of tauri's cli you can use this feature flag to switch between tauri's `dev` and `build` modes.
 # DO NOT REMOVE!!
 custom-protocol = [ "tauri/custom-protocol" ]
+
+[profile.release]
+opt-level = 3
+overflow-checks = true
+debug = false
