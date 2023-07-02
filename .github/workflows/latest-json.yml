@@ -1,4 +1,4 @@
-name: Generate Latest Release Metadata JSON file
+name: Generate Latest JSON
 
 on:
   release:
@@ -15,7 +15,6 @@ jobs:
 
       - name: Generate latest.json
         run: |
-          # 生成latest.json的逻辑代码
           echo '{"version": "2.0.0"}' > latest.json
 
       - name: Upload latest.json to release
