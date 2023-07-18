@@ -3,10 +3,11 @@ import "./styles/globals.scss";
 import "./styles/markdown.scss";
 import "./styles/highlight.scss";
 import { getClientConfig } from "./config/client";
+import { type Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "ChatGPT",
-  description: "Your private AI assistant",
+  description: "Your private ChatGPT Assistant.",
   viewport: {
     width: "device-width",
     initialScale: 1,
