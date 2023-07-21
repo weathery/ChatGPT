@@ -33,6 +33,9 @@ One-Click to get well-designed cross-platform ChatGPT web UI.
 
 </div>
 
+## Statistics
+<img src="https://hits-app.vercel.app/hits?url=https%3A%2F%2Fgithub.com%2Fweathery%2FChatGPT" />
+
 ## Features
 
 - **Deploy for free with one-click** on Vercel in under 1 minute
@@ -307,3 +310,4 @@ If you want to add a new translation, read this [document](./docs/translation.md
 ## LICENSE
 
 [MIT](https://opensource.org/license/mit/)
+
