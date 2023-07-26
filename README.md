@@ -3,7 +3,7 @@
 
 <h1 align="center">AI Assistant</h1>
 
-English / [简体中文](./README_CN.md)
+English / [简体中文](./README_CN.md) / [Español](./README_ES.md)
 
 [![Web][Web-image]][web-url]
 [![Windows][Windows-image]][download-url]

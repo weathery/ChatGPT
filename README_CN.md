@@ -3,6 +3,8 @@
 
 <h1 align="center">AI Assistant</h1>
 
+ 简体中文 / [English](./README.md) / [Español](./README_ES.md)
+
 [手机端](https://chatgpt-siyumo.vercel.app/) / [桌面端](https://github.com/weathery/ChatGPT/releases) / [使用反馈](https://github.com/weathery/ChatGPT/issues) 
 
 ![主界面](./docs/images/cover.png)
