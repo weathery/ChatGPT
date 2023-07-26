@@ -5,6 +5,13 @@
 
 English / [简体中文](./README_CN.md) / [Español](./README_ES.md)
 
+[web-url]: https://chatgpt-siyumo.vercel.app/
+[download-url]: https://github.com/weathery/ChatGPT/releases
+[Web-image]: https://img.shields.io/badge/Web-PWA-orange?logo=microsoftedge
+[Windows-image]: https://img.shields.io/badge/-Windows-blue?logo=windows
+[MacOS-image]: https://img.shields.io/badge/-MacOS-black?logo=apple
+[Linux-image]: https://img.shields.io/badge/-Linux-333?logo=ubuntu
+
 [![Web][Web-image]][web-url]
 [![Windows][Windows-image]][download-url]
 [![MacOS][MacOS-image]][download-url]
@@ -14,18 +21,12 @@ English / [简体中文](./README_CN.md) / [Español](./README_ES.md)
 
 [手机端][web-url] / [桌面端](https://github.com/weathery/ChatGPT/releases) / [使用反馈](https://github.com/weathery/ChatGPT/issues) 
 
-[web-url]: https://chatgpt-siyumo.vercel.app/
-[download-url]: https://github.com/weathery/ChatGPT/releases
-[Web-image]: https://img.shields.io/badge/Web-PWA-orange?logo=microsoftedge
-[Windows-image]: https://img.shields.io/badge/-Windows-blue?logo=windows
-[MacOS-image]: https://img.shields.io/badge/-MacOS-black?logo=apple
-[Linux-image]: https://img.shields.io/badge/-Linux-333?logo=ubuntu
+
+![cover](./docs/images/cover.png)
+![Settings](./docs/images/settings.png)
+![More](./docs/images/more.png)
 
 </div>
-
-
-## 界面预览
-![cover](./docs/images/cover.png)
 
 
 ## 最新动态

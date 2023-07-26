@@ -1,13 +1,15 @@
 <div align="center">
 <img src="./docs/images/icon.svg" alt="预览"/>
 
-<h1 align="center">AI Assistant</h1>
+<h1 align="center">AI助手</h1>
 
  简体中文 / [English](./README.md) / [Español](./README_ES.md)
 
 [手机端](https://chatgpt-siyumo.vercel.app/) / [桌面端](https://github.com/weathery/ChatGPT/releases) / [使用反馈](https://github.com/weathery/ChatGPT/issues) 
 
 ![主界面](./docs/images/cover.png)
+![设置](./docs/images/settings.png)
+![更多](./docs/images/more.png)
 
 </div>
 
