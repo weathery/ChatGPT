@@ -1,7 +1,7 @@
 <div align="center">
 <img src="./docs/images/icon.svg" alt="icon"/>
 
-<h1 align="center">ChatGPT Assistant</h1>
+<h1 align="center">AI Assistant</h1>
 
 English / [简体中文](./README_CN.md)
 
@@ -10,11 +10,11 @@ English / [简体中文](./README_CN.md)
 [![MacOS][MacOS-image]][download-url]
 [![Linux][Linux-image]][download-url]
 
-[Web App](https://chat.cnuco.org) / [Desktop App](https://github.com/weathery/ChatGPT/releases) / [Issues](https://github.com/weathery/ChatGPT/issues) 
+[Mobile App][web-url]/ [Desktop App](https://github.com/weathery/ChatGPT/releases) / [Issues](https://github.com/weathery/ChatGPT/issues) 
 
-[网页版](https://chat.cnuco.org) / [客户端](https://github.com/weathery/ChatGPT/releases) / [使用反馈](https://github.com/weathery/ChatGPT/issues) 
+[手机版][web-url] / [桌面端](https://github.com/weathery/ChatGPT/releases) / [使用反馈](https://github.com/weathery/ChatGPT/issues) 
 
-[web-url]: https://chat.cnuco.org
+[web-url]: https://chatgpt-siyumo.vercel.app/
 [download-url]: https://github.com/weathery/ChatGPT/releases
 [Web-image]: https://img.shields.io/badge/Web-PWA-orange?logo=microsoftedge
 [Windows-image]: https://img.shields.io/badge/-Windows-blue?logo=windows
@@ -23,8 +23,17 @@ English / [简体中文](./README_CN.md)
 
 </div>
 
+
 ## 界面预览
 ![cover](./docs/images/cover.png)
+
+
+## 最新动态
+
+- 🚀 v2.0 已经发布，现在你可以使用面具功能快速创建预制对话了！ ChatGPT 提示词高阶技能：零次、一次和少样本提示
+- 💡 想要更方便地随时随地使用本项目？可以试下这款桌面插件：https://github.com/mushan0x0/AI0x0.com
+- 🚀 v2.7 现在可以将会话分享为图片了，也可以分享到 ShareGPT 的在线链接。
+- 🚀 v2.8 发布了横跨 Linux/Windows/MacOS 的体积极小的客户端。
 
 
 ## 主要功能
@@ -41,22 +50,6 @@ English / [简体中文](./README_CN.md)
 - 多国语言支持：English, 简体中文, 繁体中文, 日本語, Español, Italiano, Türkçe, Deutsch, Tiếng Việt, Русский, Čeština
 - 拥有自己的域名？好上加好，绑定后即可在任何地方**无障碍**快速访问
 
-## 开发计划
-
-- [x] 为每个对话设置系统 Prompt 
-- [x] 允许用户自行编辑内置 Prompt 列表
-- [x] 预制角色：使用预制角色快速定制新对话 
-- [x] 分享为图片，分享到 ShareGPT 链接
-- [x] 使用 tauri 打包桌面应用
-- [x] 支持自部署的大语言模型：开箱即用 [RWKV-Runner](https://github.com/josStorer/RWKV-Runner) ，服务端部署 [LocalAI 项目](https://github.com/go-skynet/LocalAI) llama / gpt4all / rwkv / vicuna / koala / gpt4all-j / cerebras / falcon / dolly 等等，或者使用 [api-for-open-llm](https://github.com/xusenlinzy/api-for-open-llm)
-
-
-## 最新动态
-
-- 🚀 v2.0 已经发布，现在你可以使用面具功能快速创建预制对话了！ ChatGPT 提示词高阶技能：零次、一次和少样本提示
-- 💡 想要更方便地随时随地使用本项目？可以试下这款桌面插件：https://github.com/mushan0x0/AI0x0.com
-- 🚀 v2.7 现在可以将会话分享为图片了，也可以分享到 ShareGPT 的在线链接。
-- 🚀 v2.8 发布了横跨 Linux/Windows/MacOS 的体积极小的客户端。
 
 ## 常见问题（FAQ）
 
