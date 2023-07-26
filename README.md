@@ -12,7 +12,7 @@ English / [简体中文](./README_CN.md)
 
 [Mobile App][web-url]/ [Desktop App](https://github.com/weathery/ChatGPT/releases) / [Issues](https://github.com/weathery/ChatGPT/issues) 
 
-[手机版][web-url] / [桌面端](https://github.com/weathery/ChatGPT/releases) / [使用反馈](https://github.com/weathery/ChatGPT/issues) 
+[手机端][web-url] / [桌面端](https://github.com/weathery/ChatGPT/releases) / [使用反馈](https://github.com/weathery/ChatGPT/issues) 
 
 [web-url]: https://chatgpt-siyumo.vercel.app/
 [download-url]: https://github.com/weathery/ChatGPT/releases
