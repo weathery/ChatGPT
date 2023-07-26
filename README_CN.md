@@ -8,6 +8,8 @@
 [手机端](https://chatgpt-siyumo.vercel.app/) / [桌面端](https://github.com/weathery/ChatGPT/releases) / [使用反馈](https://github.com/weathery/ChatGPT/issues) 
 
 ![主界面](./docs/images/cover.png)
+![设置](./docs/images/settings.png)
+![更多](./docs/images/more.png)
 
 </div>
 
