@@ -1,15 +1,9 @@
 <div align="center">
 <img src="./docs/images/icon.svg" alt="预览"/>
 
-<h1 align="center">ChatGPT Next Web</h1>
+<h1 align="center">AI Assistant</h1>
 
-Implemente su aplicación web privada ChatGPT de forma gratuita con un solo clic.
-
-[Demo demo](https://chat-gpt-next-web.vercel.app/) / [Problemas de comentarios](https://github.com/Yidadaa/ChatGPT-Next-Web/issues) / [Únete a Discord](https://discord.gg/zrhvHCr79N) / [Grupo QQ](https://user-images.githubusercontent.com/16968934/228190818-7dd00845-e9b9-4363-97e5-44c507ac76da.jpeg) / [Desarrolladores de consejos](https://user-images.githubusercontent.com/16968934/227772541-5bcd52d8-61b7-488c-a203-0330d8006e2b.jpg) / [Donar](#捐赠-donate-usdt)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FYidadaa%2FChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&project-name=chatgpt-next-web&repository-name=ChatGPT-Next-Web)
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Yidadaa/ChatGPT-Next-Web)
+[aplicación móvil](https://chatgpt-siyumo.vercel.app/) / [versión de escritorio](https://github.com/weathery/ChatGPT/releases) / [Retroalimentación](https://github.com/weathery/ChatGPT/issues) 
 
 ![主界面](./docs/images/cover.png)
 
@@ -19,40 +13,16 @@ Implemente su aplicación web privada ChatGPT de forma gratuita con un solo clic
 
 1.  Prepara el tuyo [Clave API OpenAI](https://platform.openai.com/account/api-keys);
 2.  Haga clic en el botón de la derecha para iniciar la implementación:
-    [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FYidadaa%2FChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&project-name=chatgpt-next-web&repository-name=ChatGPT-Next-Web), inicie sesión directamente con su cuenta de Github y recuerde completar la clave API y la suma en la página de variables de entorno[Contraseña de acceso a la página](#配置页面访问密码) CÓDIGO;
+    [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fweathery%2FChatGPT&env=OPENAI_API_KEY&env=CODE&project-name=ChatGPT&repository-name=ChatGPT), inicie sesión directamente con su cuenta de Github y recuerde completar la clave API y la suma en la página de variables de entorno[Contraseña de acceso a la página](#配置页面访问密码) CÓDIGO;
 3.  Una vez implementado, puede comenzar;
 4.  (Opcional)[Enlazar un nombre de dominio personalizado](https://vercel.com/docs/concepts/projects/domains/add-a-domain): El nombre de dominio DNS asignado por Vercel está contaminado en algunas regiones y puede conectarse directamente enlazando un nombre de dominio personalizado.
 
-## Manténgase actualizado
-
-Si sigue los pasos anteriores para implementar su proyecto con un solo clic, es posible que siempre diga "La actualización existe" porque Vercel creará un nuevo proyecto para usted de forma predeterminada en lugar de bifurcar el proyecto, lo que evitará que la actualización se detecte correctamente.
-Le recomendamos que siga estos pasos para volver a implementar:
-
-- Eliminar el repositorio original;
-- Utilice el botón de bifurcación en la esquina superior derecha de la página para bifurcar este proyecto;
-- En Vercel, vuelva a seleccionar e implementar,[Echa un vistazo al tutorial detallado](./docs/vercel-cn.md#如何新建项目)。
-
-### Activar actualizaciones automáticas
-
-> Si encuentra un error de ejecución de Upstream Sync, ¡Sync Fork manualmente una vez!
-
-Cuando bifurca el proyecto, debido a las limitaciones de Github, debe ir manualmente a la página Acciones de su proyecto bifurcado para habilitar Flujos de trabajo y habilitar Upstream Sync Action, después de habilitarlo, puede activar las actualizaciones automáticas cada hora:
-
-![自动更新](./docs/images/enable-actions.jpg)
-
-![启用自动更新](./docs/images/enable-actions-sync.jpg)
-
-### Actualizar el código manualmente
-
-Si desea que el manual se actualice inmediatamente, puede consultarlo [Documentación para Github](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) Aprenda a sincronizar un proyecto bifurcado con código ascendente.
-
-Puede destacar / ver este proyecto o seguir al autor para recibir notificaciones de nuevas actualizaciones de funciones.
 
 ## Configurar la contraseña de acceso a la página
 
 > Después de configurar la contraseña, el usuario debe completar manualmente el código de acceso en la página de configuración para chatear normalmente, de lo contrario, se solicitará el estado no autorizado a través de un mensaje.
 
-> **advertir**: Asegúrese de establecer el número de dígitos de la contraseña lo suficientemente largo, preferiblemente más de 7 dígitos, de lo contrario[Será volado](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/518)。
+> **advertir**: Asegúrese de establecer el número de dígitos de la contraseña lo suficientemente largo, preferiblemente más de 7 dígitos, de lo contrario
 
 Este proyecto proporciona control de permisos limitado, agregue el nombre al nombre en la página Variables de entorno del Panel de control del proyecto Vercel `CODE` Variables de entorno con valores para contraseñas personalizadas separadas por comas:
 
@@ -106,7 +76,7 @@ Si no desea que los usuarios consulte el saldo, establezca esta variable de ento
 
 Haga clic en el botón de abajo para iniciar el desarrollo secundario:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Yidadaa/ChatGPT-Next-Web)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/weathery/ChatGPT)
 
 Antes de empezar a escribir código, debe crear uno nuevo en la raíz del proyecto `.env.local` archivo, lleno de variables de entorno:
 
@@ -127,12 +97,12 @@ Antes de empezar a escribir código, debe crear uno nuevo en la raíz del proyec
 > ⚠️ Nota: Las versiones de Docker están de 1 a 2 días por detrás de la última versión la mayor parte del tiempo, por lo que es normal que sigas diciendo "La actualización existe" después de la implementación.
 
 ```shell
-docker pull yidadaa/chatgpt-next-web
+docker pull weathery/ChatGPT
 
 docker run -d -p 3000:3000 \
    -e OPENAI_API_KEY="sk-xxxx" \
    -e CODE="页面访问密码" \
-   yidadaa/chatgpt-next-web
+   weathery/ChatGPT
 ```
 
 También puede especificar proxy:
@@ -143,7 +113,7 @@ docker run -d -p 3000:3000 \
    -e CODE="页面访问密码" \
    --net=host \
    -e PROXY_URL="http://127.0.0.1:7890" \
-   yidadaa/chatgpt-next-web
+   weathery/ChatGPT
 ```
 
 Si necesita especificar otras variables de entorno, agréguelas usted mismo en el comando anterior `-e 环境变量=环境变量值` para especificar.
@@ -153,20 +123,10 @@ Si necesita especificar otras variables de entorno, agréguelas usted mismo en e
 Ejecute el siguiente comando en la consola:
 
 ```shell
-bash <(curl -s https://raw.githubusercontent.com/Yidadaa/ChatGPT-Next-Web/main/scripts/setup.sh)
+bash <(curl -s https://raw.githubusercontent.com/weathery/ChatGPT/main/scripts/setup.sh)
 ```
 
 ⚠️ Nota: Si tiene problemas durante la instalación, utilice la implementación de Docker.
-
-## Reconocimiento
-
-### donante
-
-> Ver versión en inglés.
-
-### Colaboradores
-
-[Ver la lista de colaboradores del proyecto](https://github.com/Yidadaa/ChatGPT-Next-Web/graphs/contributors)
 
 ## Licencia de código abierto
 
