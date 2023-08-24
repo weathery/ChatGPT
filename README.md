@@ -182,19 +182,19 @@ yarn dev
 docker pull yidadaa/chatgpt-next-web
 
 docker run -d -p 3000:3000 \
-   -e OPENAI_API_KEY="sk-xxxx" \
-   -e CODE="your-password" \
-   yidadaa/chatgpt-next-web
+   -e OPENAI_API_KEY=sk-xxxx \
+   -e CODE=your-password \
+   weathery/ChatGPT
 ```
 
 You can start service behind a proxy:
 
 ```shell
 docker run -d -p 3000:3000 \
-   -e OPENAI_API_KEY="sk-xxxx" \
-   -e CODE="your-password" \
-   -e PROXY_URL="http://localhost:7890" \
-   yidadaa/chatgpt-next-web
+   -e OPENAI_API_KEY=sk-xxxx \
+   -e CODE=your-password \
+   -e PROXY_URL=http://localhost:7890 \
+   weathery/ChatGPT
 ```
 
 If your proxy needs password, use:
