@@ -1,11 +1,14 @@
 <div align="center">
 <img src="./docs/images/icon.svg" alt="프리뷰"/>
 
-<h1 align="center">ChatGPT Next Web</h1>
+<h1 align="center">AI Assistant</h1>
+
+한국어 / [English](./README.md) / [简体中文](./README_CN.md) / [Español](./README_ES.md) / [日本語](./README_JA.md) 
+
 
 개인 ChatGPT 웹 애플리케이션을 한 번의 클릭으로 무료로 배포하세요.
 
-[데모 Demo](https://chat-gpt-next-web.vercel.app/) / [피드백 Issues](https://github.com/Yidadaa/ChatGPT-Next-Web/issues) / [Discord 참여](https://discord.gg/zrhvHCr79N) / [QQ 그룹](https://user-images.githubusercontent.com/16968934/228190818-7dd00845-e9b9-4363-97e5-44c507ac76da.jpeg) / [개발자에게 기부](https://user-images.githubusercontent.com/16968934/227772541-5bcd52d8-61b7-488c-a203-0330d8006e2b.jpg) / [기부 Donate](#기부-donate-usdt)
+[데모 Demo](https://chat.cnuco.org) / [피드백 Issues](https://github.com/weathery/ChatGPT/issues) / [Discord 참여](https://discord.gg/zrhvHCr79N) / [QQ 그룹](https://user-images.githubusercontent.com/16968934/228190818-7dd00845-e9b9-4363-97e5-44c507ac76da.jpeg) / [개발자에게 기부](https://user-images.githubusercontent.com/16968934/227772541-5bcd52d8-61b7-488c-a203-0330d8006e2b.jpg) / [기부 Donate](#기부-donate-usdt)
 
 [![Vercel로 배포하기](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FYidadaa%2FChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&project-name=chatgpt-next-web&repository-name=ChatGPT-Next-Web)
 
@@ -52,7 +55,7 @@
 
 > 비밀번호가 설정된 후, 사용자는 설정 페이지에서 접근 코드를 수동으로 입력하여 정상적으로 채팅할 수 있습니다. 그렇지 않으면 메시지를 통해 권한이 없는 상태가 표시됩니다.
 
-> **경고** : 비밀번호의 길이를 충분히 길게 설정하십시오. 최소 7 자리 이상이 좋습니다. 그렇지 않으면 [해킹될 수 있습니다](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/518).
+> **경고** : 비밀번호의 길이를 충분히 길게 설정하십시오. 최소 7 자리 이상이 좋습니다. 그렇지 않으면 [해킹될 수 있습니다](https://github.com/weathery/ChatGPT/issues/518).
 
 이 프로젝트는 제한된 권한 제어 기능을 제공합니다. Vercel 프로젝트 컨트롤 패널의 환경 변수 페이지에서 `CODE`라는 환경 변수를 추가하십시오. 값은 쉼표로 구분된 사용자 정의 비밀번호로 설정됩니다. (아래 예시의 경우 `code1` `code2` `code3` 3개의 비밀번호가 생성됩니다.)
 
@@ -177,7 +180,7 @@ bash <(curl -s https://raw.githubusercontent.com/Yidadaa/ChatGPT-Next-Web/main/s
 
 ### 기여자
 
-[프로젝트 기여자 목록 보기](https://github.com/Yidadaa/ChatGPT-Next-Web/graphs/contributors)
+[프로젝트 기여자 목록 보기](https://github.com/weathery/ChatGPT/graphs/contributors)
 
 ### 관련 프로젝트
 - [one-api](https://github.com/songquanpeng/one-api): 통합 대형 모델 할당 관리 플랫폼, 주요 대형 언어 모델 모두 지원
