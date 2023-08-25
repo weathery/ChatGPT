@@ -8,8 +8,8 @@
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "ChatGPT Next Web",
-    "version": "2.9.4"
+    "productName": "AI Assistant",
+    "version": "2.9.8"
   },
   "tauri": {
     "allowlist": {
@@ -49,7 +49,7 @@
     "bundle": {
       "active": true,
       "category": "DeveloperTool",
-      "copyright": "2023, Zhang Yifei All Rights Reserved.",
+      "copyright": "MIT.",
       "deb": {
         "depends": []
       },
@@ -61,7 +61,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.yida.chatgpt.next.web",
+      "identifier": "org.cnuco.ai.chat",
       "longDescription": "ChatGPT Next Web is a cross-platform ChatGPT client, including Web/Win/Linux/OSX/PWA.",
       "macOS": {
         "entitlements": null,
@@ -71,7 +71,7 @@
         "signingIdentity": null
       },
       "resources": [],
-      "shortDescription": "ChatGPT Next Web App",
+      "shortDescription": "AI assistant",
       "targets": "all",
       "windows": {
         "certificateThumbprint": null,
@@ -85,7 +85,7 @@
     "updater": {
       "active": true,
       "endpoints": [
-        "https://github.com/Yidadaa/ChatGPT-Next-Web/releases/latest/download/latest.json"
+        "https://github.com/weathery/ChatGPT/releases/latest/download/latest.json"
       ],
       "dialog": false,
       "windows": {
@@ -98,7 +98,7 @@
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "ChatGPT Next Web",
+        "title": "AI Assistant",
         "width": 960,
         "hiddenTitle": true,
         "titleBarStyle": "Overlay"
