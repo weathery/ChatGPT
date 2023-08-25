@@ -3,9 +3,9 @@
 
 <h1 align="center">AI Ayudante</h1>
 
-Español / [English](./README.md) / [简体中文](./README_CN.md)
+Español / [English](./README.md) / [简体中文](./README_CN.md) / [日本語](./README_JA.md) / [한국어](./README_KO.md)
 
-[aplicación móvil](https://chatgpt-siyumo.vercel.app/) / [versión de escritorio](https://github.com/weathery/ChatGPT/releases) / [Retroalimentación](https://github.com/weathery/ChatGPT/issues) 
+[aplicación móvil](https://chat.cnuco.org) / [versión de escritorio](https://github.com/weathery/ChatGPT/releases) / [Retroalimentación](https://github.com/weathery/ChatGPT/issues) 
 
 ![cover](./docs/images/cover.png)
 ![Settings](./docs/images/settings.png)
@@ -80,7 +80,7 @@ Si no desea que los usuarios consulte el saldo, establezca esta variable de ento
 
 Haga clic en el botón de abajo para iniciar el desarrollo secundario:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/weathery/ChatGPT)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/weathery/ChatGPT/)
 
 Antes de empezar a escribir código, debe crear uno nuevo en la raíz del proyecto `.env.local` archivo, lleno de variables de entorno:
 

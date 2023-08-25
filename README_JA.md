@@ -1,9 +1,9 @@
 <div align="center">
 <img src="./docs/images/icon.svg" alt="icon"/>
 
-<h1 align="center">ChatGPT Next Web</h1>
+<h1 align="center">AI Assistant</h1>
 
-[English](./README.md) / [简体中文](./README_CN.md) / 日本語
+ 日本語 / [English](./README.md) / [简体中文](./README_CN.md) / [Español](./README_ES.md) / [한국어](./README_KO.md)
 
 ワンクリックで、クロスプラットフォーム ChatGPT ウェブ UI が表示されます。
 
@@ -12,10 +12,10 @@
 [![MacOS][MacOS-image]][download-url]
 [![Linux][Linux-image]][download-url]
 
-[Web App](https://chatgpt.nextweb.fun/) / [Desktop App](https://github.com/Yidadaa/ChatGPT-Next-Web/releases) / [Issues](https://github.com/Yidadaa/ChatGPT-Next-Web/issues) / [Discord](https://discord.gg/YCkeafCafC) / [コーヒーをおごる](https://www.buymeacoffee.com/yidadaa) / [QQ グループ](https://github.com/Yidadaa/ChatGPT-Next-Web/discussions/1724) / [開発者への報酬](https://user-images.githubusercontent.com/16968934/227772541-5bcd52d8-61b7-488c-a203-0330d8006e2b.jpg)
+[Web App](https://chat.cnuco.org) / [Desktop App](https://github.com/weathery/ChatGPT/releases) / [Issues](https://github.com/weathery/ChatGPT/issues) / [Discord](https://discord.gg/YCkeafCafC) / [コーヒーをおごる](https://www.buymeacoffee.com/yidadaa) / [QQ グループ](https://github.com/weathery/ChatGPT/discussions/1724) / [開発者への報酬](https://user-images.githubusercontent.com/16968934/227772541-5bcd52d8-61b7-488c-a203-0330d8006e2b.jpg)
 
-[web-url]: https://chatgpt.nextweb.fun
-[download-url]: https://github.com/Yidadaa/ChatGPT-Next-Web/releases
+[web-url]: https://chatgpt-siyumo.vercel.app
+[download-url]: https://github.com/weathery/ChatGPT/releases
 [Web-image]: https://img.shields.io/badge/Web-PWA-orange?logo=microsoftedge
 [Windows-image]: https://img.shields.io/badge/-Windows-blue?logo=windows
 [MacOS-image]: https://img.shields.io/badge/-MacOS-black?logo=apple
@@ -32,7 +32,7 @@
 ## 特徴
 
 - Vercel で 1 分以内に**ワンクリックで無料デプロイ**。
-- コンパクトなクライアント (~5MB) on Linux/Windows/MacOS、[今すぐダウンロード](https://github.com/Yidadaa/ChatGPT-Next-Web/releases)
+- コンパクトなクライアント (~5MB) on Linux/Windows/MacOS、[今すぐダウンロード](https://github.com/weathery/ChatGPT/releases)
 - [RWKV-Runner](https://github.com/josStorer/RWKV-Runner) または [LocalAI](https://github.com/go-skynet/LocalAI) との使用をお勧めします
 - プライバシー第一、すべてのデータはブラウザにローカルに保存されます
 - マークダウンのサポート: LaTex、マーメイド、コードハイライトなど
@@ -45,13 +45,13 @@
 
 ## ロードマップ
 
-- [x] システムプロンプト: ユーザー定義のプロンプトをシステムプロンプトとして固定 [#138](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/138)
+- [x] システムプロンプト: ユーザー定義のプロンプトをシステムプロンプトとして固定 [#138](https://github.com/weathery/ChatGPT/issues/138)
 - [x] ユーザープロンプト: ユーザはカスタムプロンプトを編集し、プロンプトリストに保存することができます。
-- [x] プロンプトテンプレート: 事前に定義されたインコンテキストプロンプトで新しいチャットを作成 [#993](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/993)
-- [x] イメージとして共有、ShareGPT への共有 [#1741](https://github.com/Yidadaa/ChatGPT-Next-Web/pull/1741)
+- [x] プロンプトテンプレート: 事前に定義されたインコンテキストプロンプトで新しいチャットを作成 [#993](https://github.com/weathery/ChatGPT/issues/993)
+- [x] イメージとして共有、ShareGPT への共有 [#1741](https://github.com/weathery/ChatGPT/pull/1741)
 - [x] tauri を使ったデスクトップアプリ
 - [x] セルフホストモデル: [RWKV-Runner](https://github.com/josStorer/RWKV-Runner) と完全に互換性があり、[LocalAI](https://github.com/go-skynet/LocalAI) のサーバーデプロイも可能です: llama/gpt4all/rwkv/vicuna/koala/gpt4all-j/cerebras/falcon/dolly など
-- [ ] プラグイン: ネットワーク検索、計算機、その他のAPIなどをサポート [#165](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/165)
+- [ ] プラグイン: ネットワーク検索、計算機、その他のAPIなどをサポート [#165](https://github.com/weathery/ChatGPT/issues/165)
 
 ## 新機能
 
@@ -165,7 +165,7 @@ NodeJS >= 18、Docker >= 20
 
 > [簡体字中国語 > 二次開発の進め方](./README_CN.md#开发)
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Yidadaa/ChatGPT-Next-Web)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/weathery/ChatGPT/)
 
 開発を始める前に、プロジェクトのルートに新しい `.env.local` ファイルを作成し、そこに api キーを置く必要があります:
 
@@ -233,42 +233,9 @@ bash <(curl -s https://raw.githubusercontent.com/Yidadaa/ChatGPT-Next-Web/main/s
 
 新しい翻訳を追加したい場合は、この[ドキュメント](./docs/translation.md)をお読みください。
 
-## 寄付
-
-[コーヒーをおごる](https://www.buymeacoffee.com/yidadaa)
-
-## スペシャルサンクス
-
-### スポンサー
-
-> 寄付金額が 100 元以上のユーザーのみリストアップしています
-
-[@mushan0x0](https://github.com/mushan0x0)
-[@ClarenceDan](https://github.com/ClarenceDan)
-[@zhangjia](https://github.com/zhangjia)
-[@hoochanlon](https://github.com/hoochanlon)
-[@relativequantum](https://github.com/relativequantum)
-[@desenmeng](https://github.com/desenmeng)
-[@webees](https://github.com/webees)
-[@chazzhou](https://github.com/chazzhou)
-[@hauy](https://github.com/hauy)
-[@Corwin006](https://github.com/Corwin006)
-[@yankunsong](https://github.com/yankunsong)
-[@ypwhs](https://github.com/ypwhs)
-[@fxxxchao](https://github.com/fxxxchao)
-[@hotic](https://github.com/hotic)
-[@WingCH](https://github.com/WingCH)
-[@jtung4](https://github.com/jtung4)
-[@micozhu](https://github.com/micozhu)
-[@jhansion](https://github.com/jhansion)
-[@Sha1rholder](https://github.com/Sha1rholder)
-[@AnsonHyq](https://github.com/AnsonHyq)
-[@synwith](https://github.com/synwith)
-[@piksonGit](https://github.com/piksonGit)
-
 ### コントリビューター
 
-[コントリビューター達](https://github.com/Yidadaa/ChatGPT-Next-Web/graphs/contributors)
+[コントリビューター達](https://github.com/weathery/ChatGPT/graphs/contributors)
 
 ## ライセンス
 
