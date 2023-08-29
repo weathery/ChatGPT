@@ -3,9 +3,9 @@
 
 <h1 align="center">AI助手</h1>
 
- 简体中文 / [English](./README.md) / [Español](./README_ES.md)
+ 简体中文 / [English](./README.md) / [Español](./README_ES.md) / [日本語](./README_JA.md) / [한국어](./README_KO.md)
 
-[手机端](https://chatgpt-siyumo.vercel.app/) / [桌面端](https://github.com/weathery/ChatGPT/releases) / [使用反馈](https://github.com/weathery/ChatGPT/issues) 
+[手机端](https://chat.cnuco.org) / [桌面端](https://github.com/weathery/ChatGPT/releases) / [使用反馈](https://github.com/weathery/ChatGPT/issues) 
 
 ![主界面](./docs/images/cover.png)
 ![设置](./docs/images/settings.png)
@@ -79,7 +79,7 @@ OpenAI 接口代理 URL，如果你手动配置了 openai 接口代理，请填�
 
 点击下方按钮，开始二次开发：
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/weathery/ChatGPT)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/weathery/ChatGPT/)
 
 在开始写代码之前，需要在项目根目录新建一个 `.env.local` 文件，里面填入环境变量：
 
