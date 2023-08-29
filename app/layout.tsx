@@ -7,7 +7,7 @@ import { type Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "ChatGPT",
-  description: "Your private ChatGPT Assistant.",
+  description: "Your private AI Assistant.",
   viewport: {
     width: "device-width",
     initialScale: 1,
