@@ -9,7 +9,7 @@
   },
   "package": {
     "productName": "AI Assistant",
-    "version": "2.9.8"
+    "version": "2.9.9"
   },
   "tauri": {
     "allowlist": {
@@ -87,7 +87,7 @@
       "endpoints": [
         "https://github.com/weathery/ChatGPT/releases/latest/download/latest.json"
       ],
-      "dialog": false,
+      "dialog": true,
       "windows": {
         "installMode": "passive"
       },
