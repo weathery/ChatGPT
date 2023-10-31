@@ -145,3 +145,4 @@ bash <(curl -s https://raw.githubusercontent.com/weathery/ChatGPT/main/scripts/s
 ## 开源协议
 
 [MIT](https://opensource.org/license/mit/)
+
