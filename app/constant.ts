@@ -10,7 +10,6 @@ export const RUNTIME_CONFIG_DOM = "danger-runtime-config";
 export const DEFAULT_CORS_HOST = "https://chat.cnuco.org";
 export const DEFAULT_API_HOST = `${DEFAULT_CORS_HOST}/api/proxy`;
 export const OPENAI_BASE_URL = "https://api.openai.com";
-export const DEFAULT_API_HOST = "https://chat.cnuco.org/api/proxy";
 
 export enum Path {
   Home = "/",
