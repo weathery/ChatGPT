@@ -22,10 +22,12 @@ export enum Path {
 
 export enum ApiPath {
   Cors = "/api/cors",
+  OpenAI = "/api/openai",
 }
 
 export enum SlotID {
   AppBody = "app-body",
+  CustomModel = "custom-model",
 }
 
 export enum FileName {
@@ -59,11 +61,20 @@ export const REQUEST_TIMEOUT_MS = 60000;
 
 export const EXPORT_MESSAGE_CLASS_NAME = "export-markdown";
 
+export enum ServiceProvider {
+  OpenAI = "OpenAI",
+  Azure = "Azure",
+}
+
 export const OpenaiPath = {
   ChatPath: "v1/chat/completions",
   UsagePath: "dashboard/billing/usage",
   SubsPath: "dashboard/billing/subscription",
   ListModelPath: "v1/models",
+};
+
+export const Azure = {
+  ExampleEndpoint: "https://{resource-url}/openai/deployments/{deploy-id}",
 };
 
 export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lang
@@ -72,6 +83,8 @@ You are ChatGPT, a large language model trained by OpenAI.
 Knowledge cutoff: {{cutoff}}
 Current model: {{model}}
 Current time: {{time}}
+Latex inline: $x^2$ 
+Latex block: $$e=mc^2$$
 `;
 
 export const SUMMARIZE_MODEL = "gpt-3.5-turbo";
