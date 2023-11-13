@@ -49,6 +49,7 @@ English / [简体中文](./README_CN.md) / [Español](./README_ES.md) / [日本�
 - 🚀 v2.9 新增更多国际化语言支持、对话记录通过WebDAV/UpStash方式进行云端数据同步，。 
 - 🚀 v3.0 支持使用自定义 Azure 服务。
 
+
 ## 常见问题（FAQ）
 
 [English](./docs/faq-en.md)
@@ -57,109 +58,6 @@ English / [简体中文](./README_CN.md) / [Español](./README_ES.md) / [日本�
 [日本語](./docs/faq-ja.md)
 [한국어](./docs/faq-ko.md)
 
-## 自定义设置
-
-## Access Password
-
-> [简体中文 > 如何增加访问密码](./README_CN.md#配置页面访问密码)
-
-This project provides limited access control. Please add an environment variable named `CODE` on the vercel environment variables page. The value should be passwords separated by comma like this:
-
-```
-code1,code2,code3
-```
-
-After adding or modifying this environment variable, please redeploy the project for the changes to take effect.
-
-## Environment Variables
-
-> [简体中文 > 如何配置 api key、访问密码、接口代理](./README_CN.md#环境变量)
-
-### `CODE` (optional)
-
-Access password, separated by comma.
-
-### `OPENAI_API_KEY` (required)
-
-Your openai api key.
-
-### `BASE_URL` (optional)
-
-> Default: `https://api.openai.com`
-
-> Examples: `http://your-openai-proxy.com`
-
-Override openai api request base url.
-
-### `OPENAI_ORG_ID` (optional)
-
-Specify OpenAI organization ID.
-
-### `AZURE_URL` (optional)
-
-> Example: https://{azure-resource-url}/openai/deployments/{deploy-name}
-
-Azure deploy url.
-
-### `AZURE_API_KEY` (optional)
-
-Azure Api Key.
-
-### `AZURE_API_VERSION` (optional)
-
-Azure Api Version, find it at [Azure Documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference#chat-completions).
-
-### `HIDE_USER_API_KEY` (optional)
-
-> Default: Empty
-
-If you do not want users to input their own API key, set this value to 1.
-
-### `DISABLE_GPT4` (optional)
-
-> Default: Empty
-
-If you do not want users to use GPT-4, set this value to 1.
-
-### `ENABLE_BALANCE_QUERY` (optional)
-
-> Default: Empty
-
-If you do want users to query balance, set this value to 1, or you should set it to 0.
-
-### `DISABLE_FAST_LINK` (optional)
-
-> Default: Empty
-
-If you want to disable parse settings from url, set this to 1.
-
-### `CUSTOM_MODELS` (optional)
-
-> Default: Empty
-> Example: `+llama,+claude-2,-gpt-3.5-turbo,gpt-4-1106-preview:gpt-4-turbo` means add `llama, claude-2` to model list, and remove `gpt-3.5-turbo` from list, and display `gpt-4-1106-preview` as `gpt-4-turbo`.
-
-To control custom models, use `+` to add a custom model, use `-` to hide a model, use `name:displayName` to customize model name, separated by comma.
-```
-
-## Synchronizing Chat Records (UpStash)
-
-| [简体中文](./docs/synchronise-chat-logs-cn.md) | [English](./docs/synchronise-chat-logs-en.md) | [Italiano](./docs/synchronise-chat-logs-es.md) | [日本語](./docs/synchronise-chat-logs-ja.md) | [한국어](./docs/synchronise-chat-logs-ko.md)
-
-## Documentation
-
-> Please go to the [docs][./docs] directory for more documentation instructions.
-
-- [Deploy with cloudflare (Deprecated)](./docs/cloudflare-pages-en.md)
-- [Frequent Ask Questions](./docs/faq-en.md)
-- [How to add a new translation](./docs/translation.md)
-- [How to use Vercel (No English)](./docs/vercel-cn.md)
-- [User Manual (Only Chinese, WIP)](./docs/user-manual-cn.md)
-
-## Screenshots
-
-![Settings](./docs/images/settings.png)
-
-![More](./docs/images/more.png)
 
 ## LICENSE
 
