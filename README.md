@@ -24,7 +24,7 @@ English / [简体中文](./README_CN.md) / [Español](./README_ES.md) / [日本�
 ![More](./docs/images/more.png)
 </div>
 
-## 主要功能
+## 功能简介
 
 - 支持用户随时随地、简单（不需要翻墙）、多渠道（手机/电脑）访问ChatGPT等AI平台。
 - 隐私安全，所有数据保存在用户浏览器本地。
