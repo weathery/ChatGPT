@@ -4,20 +4,13 @@
 
 English / [简体中文](./README_CN.md) / [Español](./README_ES.md) / [日本語](./README_JA.md) / [한국어](./README_KO.md)
 
-<<<<<<< HEAD
 [web-url]: https://chat.cnuco.org
 [download-url]: https://github.com/weathery/ChatGPT/releases
 [Web-image]: https://img.shields.io/badge/Web-PWA-orange?logo=microsoftedge
 [Windows-image]: https://img.shields.io/badge/-Windows-blue?logo=windows
 [MacOS-image]: https://img.shields.io/badge/-MacOS-black?logo=apple
 [Linux-image]: https://img.shields.io/badge/-Linux-333?logo=ubuntu
-=======
-English / [简体中文](./README_CN.md)
 
-One-Click to get well-designed cross-platform ChatGPT web UI.
-
-你的跨平台私人 ChatGPT 应用。
->>>>>>> 549a2fd20655e1e443c5091772bf039d3ad402f0
 
 [![Web][Web-image]][web-url]
 [![Windows][Windows-image]][download-url]
@@ -64,31 +57,7 @@ One-Click to get well-designed cross-platform ChatGPT web UI.
 [日本語](./docs/faq-ja.md)
 [한국어](./docs/faq-ko.md)
 
-> [简体中文 > 如何保持代码更新](./README_CN.md#保持更新)
-
-If you have deployed your own project with just one click following the steps above, you may encounter the issue of "Updates Available" constantly showing up. This is because Vercel will create a new project for you by default instead of forking this project, resulting in the inability to detect updates correctly.
-
-We recommend that you follow the steps below to re-deploy:
-
-- Delete the original repository;
-- Use the fork button in the upper right corner of the page to fork this project;
-- Choose and deploy in Vercel again, [please see the detailed tutorial](./docs/vercel-cn.md).
-
-### Enable Automatic Updates
-
-> If you encounter a failure of Upstream Sync execution, please manually sync fork once.
-
-After forking the project, due to the limitations imposed by GitHub, you need to manually enable Workflows and Upstream Sync Action on the Actions page of the forked project. Once enabled, automatic updates will be scheduled every hour:
-
-![Automatic Updates](./docs/images/enable-actions.jpg)
-
-![Enable Automatic Updates](./docs/images/enable-actions-sync.jpg)
-
-### Manually Updating Code
-
-If you want to update instantly, you can check out the [GitHub documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) to learn how to synchronize a forked project with upstream code.
-
-You can star or watch this project or follow author to get release notifications in time.
+## 自定义设置
 
 ## Access Password
 
@@ -170,24 +139,6 @@ If you want to disable parse settings from url, set this to 1.
 > Example: `+llama,+claude-2,-gpt-3.5-turbo,gpt-4-1106-preview:gpt-4-turbo` means add `llama, claude-2` to model list, and remove `gpt-3.5-turbo` from list, and display `gpt-4-1106-preview` as `gpt-4-turbo`.
 
 To control custom models, use `+` to add a custom model, use `-` to hide a model, use `name:displayName` to customize model name, separated by comma.
-
-## Requirements
-
-NodeJS >= 18, Docker >= 20
-
-## Development
-
-> [简体中文 > 如何进行二次开发](./README_CN.md#开发)
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Yidadaa/ChatGPT-Next-Web)
-
-Before starting development, you must create a new `.env.local` file at project root, and place your api key into it:
-
-```
-OPENAI_API_KEY=<your api key here>
-
-# if you are not able to access openai service, use this BASE_URL
-BASE_URL=https://chatgpt1.nextweb.fun/api/proxy
 ```
 
 ## Synchronizing Chat Records (UpStash)
