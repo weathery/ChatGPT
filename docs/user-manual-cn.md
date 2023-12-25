@@ -2,7 +2,7 @@
 
 > No english version yet, please read this doc with ChatGPT or other translation tools.
 
-本文档用于解释 NextChat 的部分功能介绍和设计原则。
+本文档用于解释 ChatGPTNextWeb 的部分功能介绍和设计原则。
 
 ## 面具 (Mask)
 
