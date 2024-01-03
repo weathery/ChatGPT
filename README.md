@@ -25,7 +25,6 @@ English / [简体中文](./README_CN.md) / [Español](./README_ES.md) / [日本�
 </div>
 
 ## 功能简介
-
 - 支持用户随时随地、简单（不需要翻墙）、多渠道（手机/电脑）访问ChatGPT等AI平台。
 - 隐私安全，所有数据保存在用户浏览器本地。
 - 界面支持多国语言：English, 简体中文, 繁体中文, 日本語, Español, Italiano, Türkçe, Deutsch, Tiếng Việt, Русский, Čeština
@@ -38,7 +37,6 @@ English / [简体中文](./README_CN.md) / [Español](./README_ES.md) / [日本�
 
 
 ## 最新动态
-
 - 🚀 v2.0 使用面具功能快速创建预制对话了！ ChatGPT 提示词高阶技能：零次、一次和少样本提示
 - 🚀 v2.5 想要更方便地随时随地使用本项目？可以试下这款桌面插件：https://github.com/mushan0x0/AI0x0.com
 - 🚀 v2.7 现在可以将会话分享为图片了，也可以分享到 ShareGPT 的在线链接。
@@ -48,7 +46,6 @@ English / [简体中文](./README_CN.md) / [Español](./README_ES.md) / [日本�
 - 🚀 v3.4 支持Google Gemini模型。 
 
 ## 常见问题（FAQ）
-
 [English](./docs/faq-en.md)
 [简体中文](./docs/faq-cn.md)
 [Español](./docs/faq-es.md)
@@ -57,5 +54,4 @@ English / [简体中文](./README_CN.md) / [Español](./README_ES.md) / [日本�
 
 
 ## LICENSE
-
 [MIT](https://opensource.org/license/mit/)
