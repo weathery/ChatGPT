@@ -1,5 +1,4 @@
 [package]
-<<<<<<< HEAD
 name = "chatgpt-next-web"
 version = "3.6.0"
 description = "A cross platform app for LLM ChatBot."
