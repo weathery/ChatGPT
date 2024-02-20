@@ -1,11 +1,11 @@
 [package]
-name = "chatgpt-next-web"
+name = "ai-assistant"
 version = "3.6.0"
 description = "A cross platform app for LLM ChatBot."
 authors = ["Yidadaa"]
 license = "mit"
 repository = ""
-default-run = "nextchat"
+default-run = "ai-assistant"
 edition = "2021"
 rust-version = "1.60"
 
