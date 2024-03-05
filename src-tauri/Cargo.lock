@@ -28,7 +28,7 @@ dependencies = [
 
 [[package]]
 name = "ai-assistant"
-version = "3.6.1"
+version = "3.6.2"
 dependencies = [
  "serde",
  "serde_json",
