@@ -8,9 +8,12 @@ export function trimTopic(topic: string) {
   // Fix an issue where double quotes still show in the Indonesian language
   // This will remove the specified punctuation from the end of the string
   // and also trim quotes from both the start and end if they exist.
-  return topic
-    .replace(/^["“”]+|["“”]+$/g, "")
-    .replace(/[，。！？”“"、,.!?]*$/, "");
+  return (
+    topic
+      // fix for gemini
+      .replace(/^["“”*]+|["“”*]+$/g, "")
+      .replace(/[，。！？”“"、,.!?*]*$/, "")
+  );
 }
 
 export async function copyToClipboard(text: string) {
@@ -292,8 +295,8 @@ export function getMessageImages(message: RequestMessage): string[] {
 
 export function isVisionModel(model: string) {
   return (
-    model.startsWith("gpt-4-vision") ||
-    model.startsWith("gemini-pro-vision") ||
-    !DEFAULT_MODELS.find((m) => m.name == model)
+    // model.startsWith("gpt-4-vision") ||
+    // model.startsWith("gemini-pro-vision") ||
+    model.includes("vision")
   );
 }
