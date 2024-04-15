@@ -40,6 +40,20 @@ export interface OpenAIListModelResponse {
   }>;
 }
 
+interface RequestPayload {
+  messages: {
+    role: "system" | "user" | "assistant";
+    content: string | MultimodalContent[];
+  }[];
+  stream?: boolean;
+  model: string;
+  temperature: number;
+  presence_penalty: number;
+  frequency_penalty: number;
+  top_p: number;
+  max_tokens?: number;
+}
+
 export class ChatGPTApi implements LLMApi {
   private disableListModels = true;
 
@@ -98,7 +112,7 @@ export class ChatGPTApi implements LLMApi {
       },
     };
 
-    const requestPayload = {
+    const requestPayload: RequestPayload = {
       messages,
       stream: options.config.stream,
       model: modelConfig.model,
@@ -112,12 +126,7 @@ export class ChatGPTApi implements LLMApi {
 
     // add max_tokens to vision model
     if (visionModel) {
-      Object.defineProperty(requestPayload, "max_tokens", {
-        enumerable: true,
-        configurable: true,
-        writable: true,
-        value: modelConfig.max_tokens,
-      });
+      requestPayload["max_tokens"] = Math.max(modelConfig.max_tokens, 4000);
     }
 
     console.log("[Request] openai payload: ", requestPayload);
