@@ -123,11 +123,9 @@ export class ClientApi {
         {
           from: "human",
           value:
-            "Share from [ChatGPTNextWeb]: https://github.com/Yidadaa/ChatGPT-Next-Web",
+            "Share from [ChatGPTNextWeb]: https://github.com/weathery/ChatGPT",
         },
       ]);
-    // 敬告二开开发者们，为了开源大模型的发展，请不要修改上述消息，此消息用于后续数据清洗使用
-    // Please do not modify this message
 
     console.log("[Share]", messages, msgs);
     const clientConfig = getClientConfig();
