@@ -44,6 +44,7 @@ English / [简体中文](./README_CN.md) / [Español](./README_ES.md) / [日本�
 - 🚀 v2.9 新增更多国际化语言支持、对话记录通过WebDAV/UpStash方式进行云端数据同步，。 
 - 🚀 v3.0 支持使用自定义 Azure 服务。
 - 🚀 v3.4 支持Google Gemini模型。 
+- 🚀 v3.7 支持GPT-4o模型。
 
 ## 常见问题（FAQ）
 [English](./docs/faq-en.md)
