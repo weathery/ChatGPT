@@ -153,6 +153,11 @@ const tw = {
       Title: "字型大小",
       SubTitle: "聊天內容的字型大小",
     },
+    FontFamily: {
+      Title: "聊天字體",
+      SubTitle: "聊天內容的字體，若置空則應用全局默認字體",
+      Placeholder: "字體名稱",
+    },
     InjectSystemPrompts: {
       Title: "匯入系統提示",
       SubTitle: "強制在每個請求的訊息列表開頭新增一個模擬 ChatGPT 的系統提示",
@@ -445,6 +450,21 @@ const tw = {
         SubTitle: "產生此角色範本的直達連結",
         Action: "複製連結",
       },
+    },
+  },
+  SearchChat: {
+    Name: "搜索",
+    Page: {
+      Title: "搜索聊天記錄",
+      Search: "輸入搜索關鍵詞",
+      NoResult: "沒有找到結果",
+      NoData: "沒有數據",
+      Loading: "加載中",
+
+      SubTitle: (count: number) => `找到 ${count} 條結果`,
+    },
+    Item: {
+      View: "查看",
     },
   },
   NewChat: {

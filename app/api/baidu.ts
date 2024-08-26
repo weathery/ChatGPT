@@ -1,73 +1,63 @@
 import { getServerSideConfig } from "@/app/config/server";
 import {
-  TENCENT_BASE_URL,
+  BAIDU_BASE_URL,
   ApiPath,
   ModelProvider,
+  BAIDU_OATUH_URL,
   ServiceProvider,
-  Tencent,
 } from "@/app/constant";
 import { prettyObject } from "@/app/utils/format";
 import { NextRequest, NextResponse } from "next/server";
 import { auth } from "@/app/api/auth";
 import { isModelAvailableInServer } from "@/app/utils/model";
-import { getHeader } from "@/app/utils/tencent";
+import { getAccessToken } from "@/app/utils/baidu";
 
 const serverConfig = getServerSideConfig();
 
-async function handle(
+export async function handle(
   req: NextRequest,
   { params }: { params: { path: string[] } },
 ) {
-  console.log("[Tencent Route] params ", params);
+  console.log("[Baidu Route] params ", params);
 
   if (req.method === "OPTIONS") {
     return NextResponse.json({ body: "OK" }, { status: 200 });
   }
 
-  const authResult = auth(req, ModelProvider.Hunyuan);
+  const authResult = auth(req, ModelProvider.Ernie);
   if (authResult.error) {
     return NextResponse.json(authResult, {
       status: 401,
     });
   }
 
+  if (!serverConfig.baiduApiKey || !serverConfig.baiduSecretKey) {
+    return NextResponse.json(
+      {
+        error: true,
+        message: `missing BAIDU_API_KEY or BAIDU_SECRET_KEY in server env vars`,
+      },
+      {
+        status: 401,
+      },
+    );
+  }
+
   try {
     const response = await request(req);
     return response;
   } catch (e) {
-    console.error("[Tencent] ", e);
+    console.error("[Baidu] ", e);
     return NextResponse.json(prettyObject(e));
   }
 }
 
-export const GET = handle;
-export const POST = handle;
-
-export const runtime = "edge";
-export const preferredRegion = [
-  "arn1",
-  "bom1",
-  "cdg1",
-  "cle1",
-  "cpt1",
-  "dub1",
-  "fra1",
-  "gru1",
-  "hnd1",
-  "iad1",
-  "icn1",
-  "kix1",
-  "lhr1",
-  "pdx1",
-  "sfo1",
-  "sin1",
-  "syd1",
-];
-
 async function request(req: NextRequest) {
   const controller = new AbortController();
 
-  let baseUrl = serverConfig.tencentUrl || TENCENT_BASE_URL;
+  let path = `${req.nextUrl.pathname}`.replaceAll(ApiPath.Baidu, "");
+
+  let baseUrl = serverConfig.baiduUrl || BAIDU_BASE_URL;
 
   if (!baseUrl.startsWith("http")) {
     baseUrl = `https://${baseUrl}`;
@@ -77,6 +67,7 @@ async function request(req: NextRequest) {
     baseUrl = baseUrl.slice(0, -1);
   }
 
+  console.log("[Proxy] ", path);
   console.log("[Base Url]", baseUrl);
 
   const timeoutId = setTimeout(
@@ -86,24 +77,54 @@ async function request(req: NextRequest) {
     10 * 60 * 1000,
   );
 
-  const fetchUrl = baseUrl;
-
-  const body = await req.text();
-  const headers = await getHeader(
-    body,
-    serverConfig.tencentSecretId as string,
-    serverConfig.tencentSecretKey as string,
+  const { access_token } = await getAccessToken(
+    serverConfig.baiduApiKey as string,
+    serverConfig.baiduSecretKey as string,
   );
+  const fetchUrl = `${baseUrl}${path}?access_token=${access_token}`;
+
   const fetchOptions: RequestInit = {
-    headers,
+    headers: {
+      "Content-Type": "application/json",
+    },
     method: req.method,
-    body,
+    body: req.body,
     redirect: "manual",
     // @ts-ignore
     duplex: "half",
     signal: controller.signal,
   };
 
+  // #1815 try to refuse some request to some models
+  if (serverConfig.customModels && req.body) {
+    try {
+      const clonedBody = await req.text();
+      fetchOptions.body = clonedBody;
+
+      const jsonBody = JSON.parse(clonedBody) as { model?: string };
+
+      // not undefined and is false
+      if (
+        isModelAvailableInServer(
+          serverConfig.customModels,
+          jsonBody?.model as string,
+          ServiceProvider.Baidu as string,
+        )
+      ) {
+        return NextResponse.json(
+          {
+            error: true,
+            message: `you are not allowed to use ${jsonBody?.model} model`,
+          },
+          {
+            status: 403,
+          },
+        );
+      }
+    } catch (e) {
+      console.error(`[Baidu] filter`, e);
+    }
+  }
   try {
     const res = await fetch(fetchUrl, fetchOptions);
 

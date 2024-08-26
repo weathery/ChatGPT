@@ -17,11 +17,7 @@
 
 1. 准备好你的 [OpenAI API Key](https://platform.openai.com/account/api-keys);
 2. 点击右侧按钮开始部署：
-<<<<<<< HEAD
    [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fweathery%2FChatGPT&env=OPENAI_API_KEY&env=CODE&project-name=ChatGPT&repository-name=ChatGPT)，直接使用 Github 账号登录即可，记得在环境变量页填入 API Key 和[页面访问密码](#配置页面访问密码) CODE；
-=======
-   [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FYidadaa%2FChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&env=GOOGLE_API_KEY&project-name=chatgpt-next-web&repository-name=ChatGPT-Next-Web)，直接使用 Github 账号登录即可，记得在环境变量页填入 API Key 和[页面访问密码](#配置页面访问密码) CODE；
->>>>>>> 422d70d928fbd30f69789cd4f05bac4204dc6c8c
 3. 部署完毕后，即可开始使用；
 4. （可选）[绑定自定义域名](https://vercel.com/docs/concepts/projects/domains/add-a-domain)：Vercel 分配的域名 DNS 在某些区域被污染了，绑定自定义域名即可直连。
 
@@ -129,6 +125,20 @@ ByteDance Api Url.
 ### `ALIBABA_URL` (可选)
 
 阿里云（千问）Api Url.
+
+### `IFLYTEK_URL` (可选)
+
+讯飞星火Api Url.
+
+### `IFLYTEK_API_KEY` (可选)
+
+讯飞星火Api Key.
+
+### `IFLYTEK_API_SECRET` (可选)
+
+讯飞星火Api Secret.
+
+
 
 ### `HIDE_USER_API_KEY` （可选）
 
