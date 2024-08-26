@@ -46,6 +46,7 @@ English / [简体中文](./README_CN.md) / [Español](./README_ES.md) / [日本�
 - 🚀 v3.4 支持Google Gemini模型。 
 - 🚀 v3.6 支持Claude和gpt-4-turbo模型。
 - 🚀 v3.7 支持GPT-4o模型。
+- 🚀 v3.8 支持gpt-4o-mini,Artifacts,Dalle模型。
 
 ## 常见问题（FAQ）
 [English](./docs/faq-en.md)
