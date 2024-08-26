@@ -154,8 +154,7 @@ export class ClientApi {
       .concat([
         {
           from: "human",
-          value:
-            "Share from [ChatGPTNextWeb]: https://github.com/weathery/ChatGPT",
+          value: "Share from [NextAI]: https://github.com/weathery/ChatGPT",
         },
       ]);
 
