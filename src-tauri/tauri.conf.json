@@ -9,7 +9,7 @@
   },
   "package": {
     "productName": "AI Assistant",
-    "version": "3.8.2"
+    "version": "3.8.3"
   },
   "tauri": {
     "allowlist": {
