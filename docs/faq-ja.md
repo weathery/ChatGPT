@@ -36,7 +36,7 @@ Docker のバージョンは安定版と同等であり、最新の Docker は�
 
 ## なぜ私がデプロイしたバージョンにはストリーミングレスポンスがないのでしょうか？
 
-> 関連する議論: [#386](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/386)
+> 関連する議論: [#386](https://github.com/weathery/ChatGPT/issues)
 
 nginx のリバースプロキシを使っている場合、設定ファイルに以下のコードを追加する必要があります:
 
@@ -176,11 +176,11 @@ OpenAI では、指定された地域のクレジットカードのみご利用�
 
 ## Azure OpenAI インターフェースの使い方
 
-次を参照: [#371](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/371)
+次を参照: [#371](https://github.com/weathery/ChatGPT/issues/371)
 
 ## トークンの消費が速いのはなぜですか？
 
-> 関連する議論: [#518](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/518)
+> 関連する議論: [#518](https://github.com/weathery/ChatGPT/issues/518)
 
 - GPT-4 にアクセスし、GPT-4 の API を定期的に使用している場合、GPT-4 の価格は GPT-3.5 の約 15 倍であるため、請求額が急激に増加します;
 - GPT-3.5 を使用しており、頻繁に使用していないにもかかわらず、請求額が急速に増加している場合は、以下の手順で直ちにトラブルシューティングを行ってください:

@@ -1,492 +1,192 @@
 <div align="center">
+<img src="./docs/images/icon.svg" alt="프리뷰"/>
 
-<a href='https://nextchat.club'>
-  <img src="https://github.com/user-attachments/assets/83bdcc07-ae5e-4954-a53a-ac151ba6ccf3" width="1000" alt="icon"/>
-</a>
+<h1 align="center">AI Assistant</h1>
 
-<h1 align="center">NextChat</h1>
+한국어 / [English](./README.md) / [简体中文](./README_CN.md) / [Español](./README_ES.md) / [日本語](./README_JA.md) 
 
-영어 / [简体中文](./README_CN.md)
 
-<a href="https://trendshift.io/repositories/5973" target="_blank">
-  <img src="https://trendshift.io/api/badge/repositories/5973" alt="ChatGPTNextWeb%2FChatGPT-Next-Web | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/>
-</a>
+개인 ChatGPT 웹 애플리케이션을 한 번의 클릭으로 무료로 배포하세요.
 
-✨ 빠르고 가벼운 AI 어시스턴트, Claude, DeepSeek, GPT-4, Gemini Pro 지원
+[데모 Demo](https://chat.cnuco.org) / [피드백 Issues](https://github.com/weathery/ChatGPT/issues) / [Discord 참여](https://discord.gg/zrhvHCr79N) / [QQ 그룹](https://user-images.githubusercontent.com/16968934/228190818-7dd00845-e9b9-4363-97e5-44c507ac76da.jpeg) / [개발자에게 기부](https://user-images.githubusercontent.com/16968934/227772541-5bcd52d8-61b7-488c-a203-0330d8006e2b.jpg) / [기부 Donate](#기부-donate-usdt)
 
-[![Saas][Saas-image]][saas-url]
-[![Web][Web-image]][web-url]
-[![Windows][Windows-image]][download-url]
-[![MacOS][MacOS-image]][download-url]
-[![Linux][Linux-image]][download-url]
+[![Vercel로 배포하기](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FYidadaa%2FChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&project-name=chatgpt-next-web&repository-name=ChatGPT-Next-Web)
 
-[NextChatAI 웹사이트](https://nextchat.club?utm_source=readme) / [iOS 앱](https://apps.apple.com/us/app/nextchat-ai/id6743085599) / [웹 데모](https://app.nextchat.club) / [데스크톱 앱](https://github.com/Yidadaa/ChatGPT-Next-Web/releases) / [엔터프라이즈 버전](#enterprise-edition)
+[![Gitpod에서 열기](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Yidadaa/ChatGPT-Next-Web)
 
-[saas-url]: https://nextchat.club?utm_source=readme
-[saas-image]: https://img.shields.io/badge/NextChat-Saas-green?logo=microsoftedge
-[web-url]: https://app.nextchat.club/
-[download-url]: https://github.com/Yidadaa/ChatGPT-Next-Web/releases
-[Web-image]: https://img.shields.io/badge/Web-PWA-orange?logo=microsoftedge
-[Windows-image]: https://img.shields.io/badge/-Windows-blue?logo=windows
-[MacOS-image]: https://img.shields.io/badge/-MacOS-black?logo=apple
-[Linux-image]: https://img.shields.io/badge/-Linux-333?logo=ubuntu
-
-[<img src="https://zeabur.com/button.svg" alt="Deploy on Zeabur" height="30">](https://zeabur.com/templates/ZBUEFA) [<img src="https://vercel.com/button" alt="Deploy on Vercel" height="30">](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FChatGPTNextWeb%2FChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&project-name=nextchat&repository-name=NextChat) [<img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Open in Gitpod" height="30">](https://gitpod.io/#https://github.com/ChatGPTNextWeb/NextChat)
-
-[<img src="https://github.com/user-attachments/assets/903482d4-3e87-4134-9af1-f2588fa90659" height="50" width="" >](https://monica.im/?utm=nxcrp)
+![메인 화면](./docs/images/cover.png)
 
 </div>
 
-## ❤️ AI API 후원사
+## 사용 시작
 
-<a href='https://302.ai/'>
-  <img src="https://github.com/user-attachments/assets/a03edf82-2031-4f23-bdb8-bfc0bfd168a4" width="100%" alt="icon"/>
-</a>
+1. [OpenAI API Key](https://platform.openai.com/account/api-keys)를 준비합니다.
+2. 오른쪽 버튼을 클릭하여 배포를 시작하십시오: 
+   [![Vercel로 배포하기](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FYidadaa%2FChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&project-name=chatgpt-next-web&repository-name=ChatGPT-Next-Web). Github 계정으로 바로 로그인하십시오. API Key와 [페이지 접근 비밀번호](#페이지-접근-비밀번호-설정) CODE를 환경 변수 페이지에 입력하십시오.
+3. 배포가 완료되면 사용을 시작하십시오.
+4. (선택 사항) [사용자 정의 도메인 바인딩](https://vercel.com/docs/concepts/projects/domains/add-a-domain) : Vercel에서 할당한 도메인 DNS가 일부 지역에서 오염되어 있습니다. 사용자 정의 도메인을 바인딩하면 직접 연결할 수 있습니다.
 
-[302.AI](https://302.ai/)는 사용한 만큼만 비용을 지불하는 AI 애플리케이션 플랫폼으로, 다양한 AI API 및 온라인 애플리케이션을 제공합니다.
+## 업데이트 유지
 
-## 🥳 NextChat iOS 버전 출시!
+위의 단계대로 프로젝트를 배포한 경우 "업데이트가 있습니다"라는 메시지가 항상 표시될 수 있습니다. 이는 Vercel이 기본적으로 새 프로젝트를 생성하고이 프로젝트를 포크하지 않기 때문입니다. 이 문제는 업데이트를 올바르게 감지할 수 없습니다.
+아래 단계를 따라 다시 배포하십시오:
 
-> 👉 [지금 설치하기](https://apps.apple.com/us/app/nextchat-ai/id6743085599)
+- 기존 저장소를 삭제합니다.
+- 페이지 오른쪽 상단의 포크 버튼을 사용하여 이 프로젝트를 포크합니다.
+- Vercel에서 다시 선택하여 배포하십시오. [자세한 튜토리얼 보기](./docs/vercel-cn.md#새-프로젝트-만드는-방법).
 
-> ❤️ [소스 코드 곧 공개 예정](https://github.com/ChatGPTNextWeb/NextChat-iOS)
+### 자동 업데이트 활성화
 
-![Github iOS Image](https://github.com/user-attachments/assets/e0aa334f-4c13-4dc9-8310-e3b09fa4b9f3)
+> Upstream Sync 오류가 발생한 경우 수동으로 Sync Fork를 한 번 실행하십시오!
 
-## 🫣 NextChat, MCP 지원!
+프로젝트를 포크한 후 GitHub의 제한으로 인해 포크한 프로젝트의 동작 페이지에서 워크플로우를 수동으로 활성화해야 합니다. Upstream Sync Action을 활성화하면 매시간마다 자동 업데이트가 활성화됩니다:
 
-> 빌드 전 환경 변수(env) `ENABLE_MCP=true` 설정 필요
+![자동 업데이트](./docs/images/enable-actions.jpg)
 
-<img src="https://github.com/user-attachments/assets/d8851f40-4e36-4335-b1a4-ec1e11488c7e" />
+![자동 업데이트 활성화](./docs/images/enable-actions-sync.jpg)
 
-## 엔터프라이즈 버전
+### 수동으로 코드 업데이트
 
-회사 내부 시스템에 맞춘 프라이빗 배포 및 맞춤형 커스터마이징 지원:
+수동으로 즉시 업데이트하려면 [GitHub 문서](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork)에서 포크된 프로젝트를 어떻게 원본 코드와 동기화하는지 확인하십시오.
 
-- **브랜드 커스터마이징**: 기업 이미지에 맞는 UI/UX 테마 적용
-- **리소스 통합 관리**: 다양한 AI 모델을 통합하여 팀원이 손쉽게 사용 가능
-- **권한 제어**: 관리자 패널을 통한 멤버·리소스·지식 베이스 권한 설정
-- **지식 통합**: 사내 문서 및 데이터와 AI를 결합한 맞춤형 답변 제공
-- **보안 감사**: 민감한 질문 차단 및 모든 기록 추적 가능
-- **프라이빗 배포 지원**: 주요 클라우드 서비스에 맞춘 배포 옵션
-- **지속적 업데이트**: 멀티모달 등 최신 AI 기능 지속 반영
+이 프로젝트에 별표/감시를 부여하거나 작성자를 팔로우하여 새 기능 업데이트 알림을 받을 수 있습니다.
 
-엔터프라이즈 문의: **business@nextchat.dev**
+## 페이지 접근 비밀번호 설정
 
-## 🖼️ 스크린샷
+> 비밀번호가 설정된 후, 사용자는 설정 페이지에서 접근 코드를 수동으로 입력하여 정상적으로 채팅할 수 있습니다. 그렇지 않으면 메시지를 통해 권한이 없는 상태가 표시됩니다.
 
-![설정](./docs/images/settings.png)
-![기타](./docs/images/more.png)
+> **경고** : 비밀번호의 길이를 충분히 길게 설정하십시오. 최소 7 자리 이상이 좋습니다. 그렇지 않으면 [해킹될 수 있습니다](https://github.com/weathery/ChatGPT/issues/518).
 
-## 주요 기능 소개
-
-- Vercel에서 원클릭 무료 배포 (1분 내 완성)
-- 모든 OS(Linux/Windows/MacOS)에서 사용 가능한 클라이언트 (~5MB) [지금 다운 받기](https://github.com/Yidadaa/ChatGPT-Next-Web/releases)
-- 자체 LLM 서버와 완벽 호환. [RWKV-Runner](https://github.com/josStorer/RWKV-Runner) 또는 [LocalAI](https://github.com/go-skynet/LocalAI)와 함께 사용하는 것을 추천
-- 개인 정보 보호: 모든 대화 기록은 브라우저에만 저장
-- Markdown 지원: LaTex, Mermaid, 코드 하이라이팅 등
-- 반응형 디자인, 다크 모드, PWA 지원
-- 빠른 초기 로딩 속도 (~100kb), 스트리밍 응답
-- 프롬프트 템플릿 생성/공유/디버깅 지원 (v2)
-- v2: 프롬프트 템플릿 기반 도구 생성, 공유, 디버깅 가능
-- 고급 프롬프트 내장 [awesome-chatgpt-prompts-zh](https://github.com/PlexPt/awesome-chatgpt-prompts-zh) and [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)
-- 긴 대화 내용 자동 압축 저장으로 토큰 절약
-- I18n: English, 简体中文, 繁体中文, 日本語, Français, Español, Italiano, Türkçe, Deutsch, Tiếng Việt, Русский, Čeština, 한국어, Indonesia
-
-<div align="center">
-   
-![主界面](./docs/images/cover.png)
-
-</div>
-
-## 개발 로드맵
-
-- [x] 시스템 프롬프트: 사용자가 정의한 프롬프트를 시스템 프롬프트로 고정하기 [#138](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/138)
-- [x] 사용자 프롬프트: 사용자 정의 프롬프트를 편집 및 저장하여 리스트로 관리 가능
-- [x] 프롬프트 템플릿: 사전 정의된 인컨텍스트 프롬프트로 새 채팅 생성 [#993](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/993)
-- [x] 이미지로 공유하거나 ShareGPT로 공유 [#1741](https://github.com/Yidadaa/ChatGPT-Next-Web/pull/1741)
-- [x] Tauri 기반 데스크톱 앱
-- [x] 자체 모델 호스팅: [RWKV-Runner](https://github.com/josStorer/RWKV-Runner), [LocalAI](https://github.com/go-skynet/LocalAI) 등 서버 배포 모델들과 완벽 호환 (llama, gpt4all, rwkv, vicuna, koala, gpt4all-j, cerebras, falcon, dolly 등)
-- [x] 아티팩트: 생성된 콘텐츠 및 웹페이지를 별도 창으로 미리보기, 복사, 공유 가능 [#5092](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/pull/5092)
-- [x] 플러그인: 웹 검색, 계산기, 기타 외부 API 기능 지원 [#165](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/165) [#5353](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/issues/5353)
-- [x] 실시간 채팅 지원 [#5672](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/issues/5672)
-- [ ] 로컬 지식 베이스 지원 예정
-
-## 🚀 최근 업데이트
-
-- 🚀 v2.15.8 실시간 채팅 지원 [#5672](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/issues/5672)
-- 🚀 v2.15.4 Tauri 기반 LLM API 호출 기능 추가 → 보안 강화 [#5379](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/issues/5379)
-- 🚀 v2.15.0 플러그인 기능 추가 → [NextChat-Awesome-Plugins](https://github.com/ChatGPTNextWeb/NextChat-Awesome-Plugins)
-- 🚀 v2.14.0 아티팩트 및 Stable Diffusion 기능 추가
-- 🚀 v2.10.1 Google Gemini Pro 모델 지원
-- 🚀 v2.9.11 Azure Endpoint 사용 가능
-- 🚀 v2.8 모든 플랫폼에서 실행 가능한 클라이언트 출시
-- 🚀 v2.7 대화 내용을 이미지로, 또는 ShareGPT로 공유 가능
-- 🚀 v2.0 릴리즈: 프롬프트 템플릿 생성 및 아이디어 구현 가능! → [ChatGPT Prompt Engineering Tips](https://www.allabtai.com/prompt-engineering-tips-zero-one-and-few-shot-prompting/)
-
-## 시작하기
-
-1. [OpenAI API 키](https://platform.openai.com/account/api-keys)를 발급받습니다.
-2. 
-   [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FYidadaa%2FChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&project-name=chatgpt-next-web&repository-name=ChatGPT-Next-Web) 버튼을 클릭해 Vercel에 배포합니다. `CODE`는 페이지 비밀번호라는 점을 기억하세요.
-
-3. Enjoy :)
-
-## FAQ
-
-[FAQ](./docs/faq-ko.md)
-
-## 최신 상태 유지 (Keep Updated)
-
-Vercel로 배포한 경우, "Updates Available" 메시지가 계속 나타날 수 있습니다. 이는 프로젝트를 포크하지 않고 새로 생성했기 때문입니다.
-
-다음 절차에 따라 다시 배포를 권장합니다:
-
-1. 기존 레포 삭제
-2. 우측 상단 "Fork" 버튼 클릭 → 포크 생성
-3. 포크된 프로젝트를 다시 Vercel에 배포  
-   → [자세한 튜토리얼 보기](./docs/vercel-ko.md)
-
-### 자동 업데이트 활성화 (Enable Automatic Updates)
-
-> Upstream Sync 오류 발생 시, [수동으로 코드 업데이트](./README_KO.md#manually-updating-code)하세요.
-
-프로젝트 포크 후에는 GitHub의 제약으로 인해 Actions 페이지에서 아래 항목들을 수동으로 활성화해야 합니다:
-
-- `Workflows`
-- `Upstream Sync Action`
-
-이후 매 시간 자동으로 업데이트됩니다:
-
-![자동 업데이트 활성화](./docs/images/enable-actions.jpg)  
-![업스트림 동기화 활성화](./docs/images/enable-actions-sync.jpg)
-
-### 수동 업데이트 방법 (Manually Updating Code)
-
-즉시 업데이트가 필요한 경우, [깃헙 문서](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork)를 참고해 포크된 프로젝트를 upstream code와 동기화하세요.
-
-릴리스 알림을 원하시면 star 또는 watch를 눌러주세요.
-
-## 접근 비밀번호 설정 (Access Password)
-
-이 프로젝트는 제한된 접근 제어를 제공합니다.  
-Vercel 환경 변수에 `CODE`를 다음 형식으로 추가하세요. value는 ,를 통해 구분된 비밀번호여야 합니다.:
+이 프로젝트는 제한된 권한 제어 기능을 제공합니다. Vercel 프로젝트 컨트롤 패널의 환경 변수 페이지에서 `CODE`라는 환경 변수를 추가하십시오. 값은 쉼표로 구분된 사용자 정의 비밀번호로 설정됩니다. (아래 예시의 경우 `code1` `code2` `code3` 3개의 비밀번호가 생성됩니다.)
 
 ```
 code1,code2,code3
 ```
 
-수정 후 반드시 다시 배포해야 적용됩니다.
+이 환경 변수를 추가하거나 수정한 후에는 프로젝트를 다시 배포하여 변경 사항을 적용해야 합니다.
 
-## 환경 변수 (Environment Variables)
+## 환경 변수
+> 이 프로젝트에서 대부분의 설정 요소들은 환경 변수를 통해 설정됩니다. [Vercel 환경변수 수정 방법.](./docs/vercel-ko.md)。
 
-### `CODE` (선택 사항)
+## OPENAI_API_KEY (필수 항목)
 
-접속 비밀번호. 쉼표로 구분합니다.
+OpenAI 키로, openai 계정 페이지에서 신청한 api key입니다.
 
-### `OPENAI_API_KEY` (필수)
+## CODE (선택 가능)
 
-당신의 OpenAI API 키, 여러 개를 사용하려면 쉼표로 연결합니다.
+접근 비밀번호로, 선택적입니다. 쉼표를 사용하여 여러 비밀번호를 구분할 수 있습니다.
 
-### `BASE_URL` (선택 사항)
+**경고** : 이 항목을 입력하지 않으면, 누구나 여러분이 배포한 웹사이트를 직접 사용할 수 있게 됩니다. 이로 인해 토큰이 빠르게 소진될 수 있으므로, 이 항목을 반드시 입력하는 것이 좋습니다.
+
+## BASE_URL (선택 가능)
 
 > 기본값: `https://api.openai.com`
 
 > 예시: `http://your-openai-proxy.com`
 
-OpenAI API 요청의 기본 URL을 재정의합니다.
+OpenAI 인터페이스 프록시 URL입니다. 만약, 수동으로 openai 인터페이스 proxy를 설정했다면, 이 항목을 입력하셔야 합니다.
 
-### `OPENAI_ORG_ID` (선택 사항)
+**참고**: SSL 인증서 문제가 발생한 경우, BASE_URL의 프로토콜을 http로 설정하세요.
 
-OpenAI organization ID를 지정합니다.
+## OPENAI_ORG_ID (선택 가능)
 
-### `AZURE_URL` (선택 사항)
+OpenAI 내의 조직 ID를 지정합니다.
 
-> 예시: https://{azure-resource-url}/openai
+## HIDE_USER_API_KEY (선택 가능)
 
-Azure 배포 URL입니다.
+사용자가 API Key를 직접 입력하는 것을 원하지 않는 경우, 이 환경 변수를 1로 설정하세요.
 
-### `AZURE_API_KEY` (선택 사항)
+## DISABLE_GPT4 (선택 가능)
 
-Azure API 키입니다.
+사용자가 GPT-4를 사용하는 것을 원하지 않는 경우, 이 환경 변수를 1로 설정하세요.
 
-### `AZURE_API_VERSION` (선택 사항)
+## HIDE_BALANCE_QUERY (선택 가능)
 
-Azure API 버전입니다. [Azure 문서](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference#chat-completions)에서 확인할 수 있습니다.
+사용자가 잔액을 조회하는 것을 원하지 않는 경우, 이 환경 변수를 1로 설정하세요.
 
-### `GOOGLE_API_KEY` (선택 사항)
+## 개발
 
-Google Gemini Pro API 키입니다.
+아래 버튼을 클릭하여 개발을 시작하세요:
 
-### `GOOGLE_URL` (선택 사항)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Yidadaa/ChatGPT-Next-Web)
 
-Google Gemini Pro API URL입니다.
-
-### `ANTHROPIC_API_KEY` (선택 사항)
-
-Anthropic Claude API 키입니다.
-
-### `ANTHROPIC_API_VERSION` (선택 사항)
-
-Anthropic Claude API 버전입니다.
-
-### `ANTHROPIC_URL` (선택 사항)
-
-Anthropic Claude API URL입니다.
-
-### `BAIDU_API_KEY` (선택 사항)
-
-Baidu API 키입니다.
-
-### `BAIDU_SECRET_KEY` (선택 사항)
-
-Baidu Secret 키입니다.
-
-### `BAIDU_URL` (선택 사항)
-
-Baidu API URL입니다.
-
-### `BYTEDANCE_API_KEY` (선택 사항)
-
-ByteDance API 키입니다.
-
-### `BYTEDANCE_URL` (선택 사항)
-
-ByteDance API URL입니다.
-
-### `ALIBABA_API_KEY` (선택 사항)
-
-Alibaba Cloud API 키입니다.
-
-### `ALIBABA_URL` (선택 사항)
-
-Alibaba Cloud API URL입니다.
-
-### `IFLYTEK_URL` (선택 사항)
-
-iflytek API URL입니다.
-
-### `IFLYTEK_API_KEY` (선택 사항)
-
-iflytek API 키입니다.
-
-### `IFLYTEK_API_SECRET` (선택 사항)
-
-iflytek API 시크릿입니다.
-
-### `CHATGLM_API_KEY` (선택 사항)
-
-ChatGLM API 키입니다.
-
-### `CHATGLM_URL` (선택 사항)
-
-ChatGLM API URL입니다.
-
-### `DEEPSEEK_API_KEY` (선택 사항)
-
-DeepSeek API 키입니다.
-
-### `DEEPSEEK_URL` (선택 사항)
-
-DeepSeek API URL입니다.
-
-### `HIDE_USER_API_KEY` (선택 사항)
-
-> 기본값: 비어 있음
-
-사용자가 자신의 API 키를 입력하지 못하게 하려면 이 값을 1로 설정하세요.
-
-### `DISABLE_GPT4` (선택 사항)
-
-> 기본값: 비어 있음
-
-사용자가 GPT-4를 사용하지 못하게 하려면 이 값을 1로 설정하세요.
-
-### `ENABLE_BALANCE_QUERY` (선택 사항)
-
-> 기본값: 비어 있음
-
-사용자가 쿼리 잔액을 조회할 수 있도록 하려면 이 값을 1로 설정하세요.
-
-### `DISABLE_FAST_LINK` (선택 사항)
-
-> 기본값: 비어 있음
-
-URL에서 설정을 파싱하는 기능을 비활성화하려면 이 값을 1로 설정하세요.
-
-### `CUSTOM_MODELS` (선택 사항)
-
-> 기본값: 비어 있음  
-> 예시: `+llama,+claude-2,-gpt-3.5-turbo,gpt-4-1106-preview=gpt-4-turbo`  
-이는 `llama`, `claude-2`를 모델 리스트에 추가하고, `gpt-3.5-turbo`를 제거하며, `gpt-4-1106-preview`를 `gpt-4-turbo`로 표시합니다.
-
-사용자 지정 모델 제어 시 `+`는 추가, `-`는 제거, `이름=표시이름`은 모델명 커스터마이징을 의미합니다. 쉼표로 구분하세요.
-
-- `-all`은 기본 모델을 모두 비활성화  
-- `+all`은 기본 모델을 모두 활성화
-
-Azure 용법 예시: `modelName@Azure=deploymentName` → 배포 이름을 커스터마이징 가능  
-> 예시: `+gpt-3.5-turbo@Azure=gpt35` → 리스트에 `gpt35(Azure)` 표시됨  
-> Azure 모델만 사용할 경우: `-all,+gpt-3.5-turbo@Azure=gpt35`
-
-ByteDance 용법 예시: `modelName@bytedance=deploymentName`  
-> 예시: `+Doubao-lite-4k@bytedance=ep-xxxxx-xxx` → `Doubao-lite-4k(ByteDance)`로 표시됨
-
-### `DEFAULT_MODEL` (선택 사항)
-
-기본 모델을 변경합니다.
-
-### `VISION_MODELS` (선택 사항)
-
-> 기본값: 비어 있음  
-> 예시: `gpt-4-vision,claude-3-opus,my-custom-model`  
-위의 모델들에 시각 기능을 부여합니다 (기본적으로 `"vision"`, `"claude-3"`, `"gemini-1.5"` 키워드를 포함한 모델은 자동 인식됨). 기본 모델 외에도 모델을 추가할 수 있습니다. 쉼표로 구분하세요.
-
-### `WHITE_WEBDAV_ENDPOINTS` (선택 사항)
-
-접속 허용할 WebDAV 서비스 주소를 늘리고자 할 때 사용합니다.
-
-- 각 주소는 완전한 endpoint 여야 함: `https://xxxx/yyy`  
-- 여러 주소는 `,`로 구분
-
-### `DEFAULT_INPUT_TEMPLATE` (선택 사항)
-
-설정 메뉴의 사용자 입력 전처리 구성 항목 초기화 시 사용할 기본 템플릿을 설정합니다.
-
-### `STABILITY_API_KEY` (선택 사항)
-
-Stability API 키입니다.
-
-### `STABILITY_URL` (선택 사항)
-
-Stability API URL을 커스터마이징합니다.
-
-### `ENABLE_MCP` (선택 사항)
-
-MCP (Model Context Protocol) 기능을 활성화합니다.
-
-### `SILICONFLOW_API_KEY` (선택 사항)
-
-SiliconFlow API 키입니다.
-
-### `SILICONFLOW_URL` (선택 사항)
-
-SiliconFlow API URL입니다.
-
-### `AI302_API_KEY` (선택 사항)
-
-302.AI API 키입니다.
-
-### `AI302_URL` (선택 사항)
-
-302.AI API URL입니다.
-
-## 요구 사항 (Requirements)
-
-NodeJS >= 18, Docker >= 20
-
-## 개발 (Development)
-
-[![Gitpod에서 열기](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Yidadaa/ChatGPT-Next-Web)
-
-개발을 시작하기 전에 프로젝트 루트에 `.env.local` 파일을 만들고, 아래와 같이 API 키를 입력하세요:
+코드 작성을 전, 프로젝트 루트 디렉토리에 `.env.local` 파일을 새로 만들고 해당 파일에 환경 변수를 입력해야 합니다:
 
 ```
-OPENAI_API_KEY=<여기에 API 키 입력>
+OPENAI_API_KEY=<여기에 여러분의 api 키를 입력하세요>
 
-# OpenAI 서비스를 사용할 수 없는 경우 아래 BASE_URL 사용
+#중국 사용자들은 이 프로젝트에 포함된 프록시를 사용하여 개발할 수 있습니다. 또는 다른 프록시 주소를 자유롭게 선택할 수 있습니다.
 BASE_URL=https://chatgpt1.nextweb.fun/api/proxy
 ```
 
-### 로컬 개발 실행
 
-```shell
-# 1. Node.js와 Yarn을 먼저 설치
-# 2. `.env.local` 파일에 환경 변수 설정
-# 3. 실행
-yarn install
-yarn dev
-```
+### 로컬 환경에서의 개발
 
-## 배포 (Deployment)
+1. nodejs 18과 yarn을 설치하세요. 자세한 사항은 ChatGPT에 문의하십시오.
+2. `yarn install && yarn dev` 명령을 실행하세요. ⚠️ 주의: 이 명령은 로컬 개발 전용입니다. 배포용으로 사용하지 마십시오!
+3. 로컬에서 배포하고 싶다면, `yarn install && yarn build && yarn start` 명령을 사용하세요. pm2와 함께 사용하여 프로세스를 보호하고, 강제 종료되지 않도록 할 수 있습니다. 자세한 내용은 ChatGPT에 문의하세요.
 
-### Docker (권장)
+## 배포
+
+### 컨테이너 배포 (추천)
+
+> Docker 버전은 20 이상이어야 합니다. 그렇지 않으면 이미지를 찾을 수 없다는 메시지가 표시됩니다.
+
+> ⚠️ 주의: docker 버전은 대부분의 경우 최신 버전보다 1~2일 뒤처집니다. 따라서 배포 후 "업데이트 가능" 알림이 지속적으로 나타날 수 있으며, 이는 정상적인 현상입니다.
 
 ```shell
 docker pull yidadaa/chatgpt-next-web
 
 docker run -d -p 3000:3000 \
    -e OPENAI_API_KEY=sk-xxxx \
-   -e CODE=your-password \
+   -e CODE=페이지 접근 비밀번호 \
    yidadaa/chatgpt-next-web
 ```
 
-서비스에 프록시를 사용하려면:
+프록시를 지정하려면 다음을 사용하세요:
 
 ```shell
 docker run -d -p 3000:3000 \
    -e OPENAI_API_KEY=sk-xxxx \
-   -e CODE=your-password \
-   -e PROXY_URL=http://localhost:7890 \
+   -e CODE=페이지 접근 비밀번호 \
+   --net=host \
+   -e PROXY_URL=http://127.0.0.1:7890 \
    yidadaa/chatgpt-next-web
 ```
 
-프록시에 인증이 필요한 경우:
+로컬 프록시에 사용자 이름과 비밀번호가 필요한 경우, 아래와 같이 사용하세요:
 
 ```shell
--e PROXY_URL="http://127.0.0.1:7890 user pass"
+-e PROXY_URL="http://127.0.0.1:7890 사용자이름 비밀번호"
 ```
 
-MCP를 활성화하려면:
-
-```
-docker run -d -p 3000:3000 \
-   -e OPENAI_API_KEY=sk-xxxx \
-   -e CODE=your-password \
-   -e ENABLE_MCP=true \
-   yidadaa/chatgpt-next-web
-```
+다른 환경 변수를 지정해야 하는 경우, 위의 명령에 `-e 환경변수=환경변수값`을 추가하여 지정하세요.
 
 ### 로컬 배포
 
-콘솔에서 다음 명령을 실행하세요.
+콘솔에서 아래의 명령을 실행하세요:
 
 ```shell
-bash <(curl -s https://raw.githubusercontent.com/Yidadaa/ChatGPT-Next-Web/main/scripts/setup.sh)
+bash <(curl -s https://raw.githubusercontent.com/weathery/ChatGPT/main/scripts/setup.sh)
 ```
 
-⚠️ 참고: 설치 중에 문제가 발생하면 Docker 배포를 사용하세요.
+⚠️ 주의: 설치 중 문제가 발생한 경우, docker로 배포하세요.
 
-## 채팅 기록 동기화 (UpStash)
 
-| [简体中文](./docs/synchronise-chat-logs-cn.md) | [English](./docs/synchronise-chat-logs-en.md) | [Italiano](./docs/synchronise-chat-logs-es.md) | [日本語](./docs/synchronise-chat-logs-ja.md) | [한국어](./docs/synchronise-chat-logs-ko.md)
+## 감사의 말
 
-## 문서 (Documentation)
+### 기부자
 
-> 더 많은 문서는 [docs](./docs) 디렉토리를 참고하세요.
+> 영문 버전 참조.
 
-- [Cloudflare 배포 가이드 (폐기됨)](./docs/cloudflare-pages-ko.md)
-- [자주 묻는 질문](./docs/faq-ko.md)
-- [새 번역 추가 방법](./docs/translation.md)
-- [Vercel 사용법 (중문)](./docs/vercel-cn.md)
-- [사용자 매뉴얼 (중문, 작성 중)](./docs/user-manual-cn.md)
+### 기여자
 
-## 번역 (Translation)
+[프로젝트 기여자 목록 보기](https://github.com/weathery/ChatGPT/graphs/contributors)
 
-새로운 번역을 추가하고 싶다면, [이 문서](./docs/translation.md)를 읽어보세요.
+### 관련 프로젝트
+- [one-api](https://github.com/songquanpeng/one-api): 통합 대형 모델 할당 관리 플랫폼, 주요 대형 언어 모델 모두 지원
 
-## 후원 (Donation)
-
-[Buy Me a Coffee](https://www.buymeacoffee.com/yidadaa)
-
-## 특별 감사 (Special Thanks)
-
-### 기여자 (Contributors)
-
-<a href="https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ChatGPTNextWeb/ChatGPT-Next-Web" />
-</a>
-
-## 라이선스 (LICENSE)
+## 오픈소스 라이센스
 
 [MIT](https://opensource.org/license/mit/)
+
